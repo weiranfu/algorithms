@@ -1,13 +1,11 @@
 public class MaxNumber {
     /** Returns the maximum value from Array m */
     public static int max(int[] m) {
-        int k = 0;
         int sum = 0;
-        while (k < m.length) {
+        for (int k = 0; k < m.length; k += 1) {
             if (sum < m[k]) {
                 sum = m[k];
             }
-            k = k + 1;
         }
         return sum;
     }
