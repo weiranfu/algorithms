@@ -3,8 +3,7 @@ public class MaxNumber {
     public static int max(int[] m) {
         int k = 0;
         int sum = 0;
-        int length = m.length;
-        while (k < length) {
+        while (k < m.length) {
             if (sum < m[k]) {
                 sum = m[k];
             }
