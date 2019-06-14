@@ -8,7 +8,7 @@ public class Dog {
 
     public void makeNoise() {
         if (weightInPounds < 10) {
-            System.out.println("Yel!");
+            System.out.println("Yip!");
         } else if (weightInPounds < 30) {
             System.out.println("Bark!");
         } else {
