@@ -1,2 +1,4 @@
 // convert String to Int:
-number = Integer.parseInt(string);
+int number = Integer.parseInt(string);
+
+double num = Double.parseDouble(string);
