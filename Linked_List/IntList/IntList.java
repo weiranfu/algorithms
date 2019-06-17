@@ -22,12 +22,9 @@ public class IntList {
     /** Get the ith item of the list. */
     public int get(int i) {
     	if (i == 0) {
-    		return this.first;
+    		return first;
     	} else {
-    		// this can't be reassigned. copy this to p.
-    		IntList p = this;
-    		p = p.rest;
-    		return p.get(i - 1);
+    		return rest.get(i - 1);
     	}
     }
 
