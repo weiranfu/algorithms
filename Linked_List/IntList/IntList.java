@@ -6,7 +6,7 @@ public class IntList {
 	public IntList rest;
     
     // This looks like linked list. 
-	public IntList(Int f, IntList r) {
+	public IntList(int f, IntList r) {
 		first = f;
 		rest = r;
 	}
@@ -27,7 +27,15 @@ public class IntList {
     		// this can't be reassigned. copy this to p.
     		IntList p = this;
     		p = p.rest;
-    		return get(i - 1);
+    		return p.get(i - 1);
     	}
+    }
+
+    public static void main(String[] args) {
+    	IntList L = new IntList(15, null);
+    	L = new IntList(10, L);
+    	L = new IntList(5, L);
+    	System.out.println(L.get(2));
+    	System.out.println(L.size());
     }
 }
