@@ -13,7 +13,8 @@ public class SLList {
 			next = n;
 		}
 	}	
-
+    
+    /* This first item (if it exists), is at sentinel.next. */
 	private IntNode sentinel;	
 	private int size;   // cache the size of the list.
 
@@ -24,16 +25,15 @@ public class SLList {
 	}
 	// use InNode class to instantiate.
 	public SLList(int x) {
-		IntNode p = new IntNode(x, null);
-		sentinel = new IntNode(816, p);  // This is a pointer.
+		sentinel = new IntNode(816, null);
+		sentinel.next = new IntNode(x, null);
 		size = 1;
 	}
 
 	/** Adds a new item to the front of this linked list. */
 	public void addFirst(int x) {
 		size += 1;
-		IntNode p = new IntNode(x, sentinel.next);
-		sentinel = new IntNode(816, p);
+		sentinel.next = new IntNode(x, sentinel.next);
 	}
 
 		/** Adds a new item to the last of this linked list. */
@@ -50,7 +50,8 @@ public class SLList {
 	/** Returns the first item in this linked list. */
 	public int getFirst() {
 		if (sentinel.next == null) {
-			System.out.println("THis is an empty list!");
+			System.out.print("THis is an empty list! Error code is: ");
+			return 0;
 		}
 		return sentinel.next.item;
 	}
@@ -76,6 +77,7 @@ public class SLList {
 	public static void main(String[] args) {
 		/* Create a list of one integer. */
 		SLList L = new SLList();
+		System.out.println(L.getFirst());
 		L.addLast(20);
 		L.addFirst(10);
 		L.addFirst(5);
