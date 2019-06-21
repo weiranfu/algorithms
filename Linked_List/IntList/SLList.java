@@ -2,7 +2,7 @@
   * of the nakeness within.
   */
 public class SLList {
-	public IntNode first;
+	private IntNode first;
 
 	// use InNode class to instantiate.
 	public SLList(int x) {
