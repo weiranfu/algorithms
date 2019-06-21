@@ -3,7 +3,7 @@
   */
 public class SLList {
 
-	public static class IntNode {
+	private static class IntNode {
 		public int item;
 		public IntNode next;
 	    
