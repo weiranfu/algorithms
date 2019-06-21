@@ -2,7 +2,18 @@
   * of the nakeness within.
   */
 public class SLList {
-	private IntNode first;
+
+	public static class IntNode {
+		public int item;
+		public IntNode next;
+	    
+	    // This looks like linked list. 
+		public IntNode(int i, IntNode n) {
+			item = i;
+			next = n;
+		}
+
+	private IntNode first;	
 
 	// use InNode class to instantiate.
 	public SLList(int x) {
