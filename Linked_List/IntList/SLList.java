@@ -17,6 +17,11 @@ public class SLList {
 	private IntNode first;	
 	private int size;   // cache the size of the list.
 
+	// Creates an empty SLList.
+	public SLList() {
+		first = null;
+		size = 0;
+	}
 	// use InNode class to instantiate.
 	public SLList(int x) {
 		first = new IntNode(x, null);  // This is a pointer.
@@ -58,17 +63,17 @@ public class SLList {
 		return 1 + size(L.next);
 	}
 
-	/** Returns the size of a list using caching. */
+	/** Returns the size of a list using caching. 
 	public int size() {
 		return size;
 	}
-
+    */
 	public static void main(String[] args) {
 		/* Create a list of one integer. */
 		SLList L = new SLList(15);
+		L.addLast(20);
 		L.addFirst(10);
 		L.addFirst(5);
-		L.addLast(20);
 		System.out.println(L.getFirst());
 		System.out.println(L.size());
 	}
