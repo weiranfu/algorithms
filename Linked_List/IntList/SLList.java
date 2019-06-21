@@ -26,18 +26,18 @@ public class SLList {
 		first = new IntNode(x, first);
 	}
 
-	/** Returns the first item in this linked list. */
-	public int getFirst() {
-		return first.item;
-	}
-
-	/** Adds a new item to the last of this linked list. */
+		/** Adds a new item to the last of this linked list. */
 	public void addLast(int x) {
 		IntNode ptn = first;
 		while (ptn.next != null) {
 			ptn = ptn.next;
 		}
 		ptn.next = new IntNode(x, null); 
+	}
+
+	/** Returns the first item in this linked list. */
+	public int getFirst() {
+		return first.item;
 	}
 
 	/** Returns the size of this linked list. */
