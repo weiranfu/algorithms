@@ -17,17 +17,20 @@ public class SLList {
     /* This first item (if it exists), is at sentinel.next. */
 	private IntNode sentinel;	
 	private int size;   // cache the size of the list.
+	private IntNode last;
 
 	// Creates an empty SLList.
 	public SLList() {
 		sentinel = new IntNode(816, null);
 		size = 0;
+		last = sentinel;
 	}
 	// use InNode class to instantiate.
 	public SLList(int x) {
 		sentinel = new IntNode(816, null);
 		sentinel.next = new IntNode(x, null);
 		size = 1;
+		last = sentinel.next;
 	}
 
 	/** Adds a new item to the front of this linked list. */
@@ -39,12 +42,8 @@ public class SLList {
 		/** Adds a new item to the last of this linked list. */
 	public void addLast(int x) {
 	    size += 1;
-		IntNode p = sentinel;
-		// move p until reaches the end of the list.
-		while (p.next != null) {
-			p = p.next;
-		}
-		p.next = new IntNode(x, null); 
+	    last.next = new IntNode(x, null);
+	    last = last.next;
 	}
 
 	/** Returns the first item in this linked list. */
@@ -54,6 +53,20 @@ public class SLList {
 			return 0;
 		}
 		return sentinel.next.item;
+	}
+
+	/** Returns the last item in this linked list. */
+	public int getLast() {
+		return last.item;
+	}
+
+	public void removeLast() {
+		IntNode p = sentinel;
+		while (p.next != last) {
+			p = p.next;
+		}
+		p.next = null;
+		last = p;
 	}
 
 	/** Returns the size of this linked list. */
@@ -83,5 +96,8 @@ public class SLList {
 		L.addFirst(5);
 		System.out.println(L.getFirst());
 		System.out.println(L.size());
+	    L.removeLast();
+		System.out.println(L.getLast());
+
 	}
 }
