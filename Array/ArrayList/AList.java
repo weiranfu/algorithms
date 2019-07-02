@@ -2,15 +2,17 @@
   * @author aranne
   */
 public class AList {
-	private int[] items = new int[100];
+	private int[] items;
 	private int size;
 
 	/** Creates an empty list. */
 	public AList() {
+		items = new int[100];
 		size = 0;
 	}
 
     public AList(int x) {
+    	items = new int[100];
     	items[0] = x;
     	size = 1;
     }
@@ -28,9 +30,7 @@ public class AList {
 
     /** Returns the item from the back of this list. */
     public int getLast() {
-    	int p = size;
-    	p -= 1;
-    	return items[p];
+    	return items[size - 1];
     }
 
     /** Returns the ith item in this list. */
