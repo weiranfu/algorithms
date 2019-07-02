@@ -25,12 +25,17 @@ public class AList {
     	size = 1;
     }
 
+    /** Resize the underlying array to the target capacity. */
+    private void resize(int capacity) {
+		int[] a = new int[capacity];
+		System.arraycopy(items, 0, a, 0, size);
+		items = a;
+	}
+
     /** Inserts X into the back of this list. */
     public void addLast(int x) {
     	if (size == items.length) {
-    		int[] a = new int[size * RFactor];
-    	    System.arraycopy(items, 0, a, 0, size);
-    	    items = a;
+    		resize(size * RFactor);
     	}
     	items[size] = x;
     	size += 1;  
