@@ -11,6 +11,7 @@
 public class AList {
 	private int[] items;
 	private int size;
+	private static final int RFactor = 2; // Resizing factor: every time we resize the array, we build a 2 times size of the array.
 
 	/** Creates an empty list. */
 	public AList() {
@@ -27,7 +28,7 @@ public class AList {
     /** Inserts X into the back of this list. */
     public void addLast(int x) {
     	if (size == items.length) {
-    		int[] a = new int[size + 1];
+    		int[] a = new int[size * RFactor];
     	    System.arraycopy(items, 0, a, 0, size);
     	    items = a;
     	}
