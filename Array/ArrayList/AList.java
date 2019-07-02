@@ -1,6 +1,13 @@
 /** Array based list. 
   * @author aranne
   */
+
+/* Invariants:
+ The position of the next item to be inserted is always size.
+ size is always the number of items in the AList.
+ The last item in the list is always in position size - 1.
+*/
+
 public class AList {
 	private int[] items;
 	private int size;
