@@ -4,21 +4,31 @@
 public class AList {
 	private int[] items = new int[100];
 	private int size;
+	private int length;
 
 	/** Creates an empty list. */
 	public AList() {
 		size = 0;
+		length = 100;
 	}
 
     public AList(int x) {
     	items[0] = x;
     	size = 1;
+    	length = 100;
     }
 
     /** Inserts X into the back of this list. */
     public void addLast(int x) {
-    	items[size] = x;
-    	size += 1;
+    	if (size < length) {
+    	    items[size] = x;
+    	    size += 1;    		
+    	}
+    	int[] a = new int[size + 1];
+    	System.arraycopy(items, 0, a, 0, size);
+    	a[size] = x;
+    	items = a;
+    	length = size + 1;
     }
 
     /** Returns the item from the back of this list. */
