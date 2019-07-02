@@ -39,7 +39,7 @@ public class AList {
     		return items[i];
     	}
     	System.out.println("The list only has " + (size - 1) + " items.");
-    	return null;
+    	return 0;
     }
 
     /** Returns the number of items in this list. */
