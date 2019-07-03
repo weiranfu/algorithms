@@ -63,6 +63,9 @@ public class AList {
     /** Deletes the item from the back of this list and 
       * returns deleted item. */
     public int removeLast() {
+    	if ((double)size / items.length <= 0.25 && size > 100) {
+    		resize(items.length / 2);
+		}
     	int lastItem = getLast();
     	size -= 1;
     	return lastItem;
