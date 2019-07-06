@@ -19,12 +19,6 @@ public class AList {
 		size = 0;
 	}
 
-    public AList(int x) {
-    	items = new int[100];
-    	items[0] = x;
-    	size = 1;
-    }
-
     /** Resize the underlying array to the target capacity. */
     private void resize(int capacity) {
 		int[] a = new int[capacity];
