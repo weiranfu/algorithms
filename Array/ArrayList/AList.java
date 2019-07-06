@@ -15,13 +15,13 @@ public class AList<Item> {
 
 	/** Creates an empty list. */
 	public AList() {
-		items = (Item []) new Object[100];
+		items = (Item[]) new Object[100];   // ignore the compilation error.
 		size = 0;
 	}
 
     /** Resize the underlying array to the target capacity. */
     private void resize(int capacity) {
-		Item[] a = (Item [])new Object[capacity];
+		Item[] a = (Item[]) new Object[capacity];
 		System.arraycopy(items, 0, a, 0, size);
 		items = a;
 	}
