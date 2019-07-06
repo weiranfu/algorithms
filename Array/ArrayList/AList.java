@@ -61,6 +61,7 @@ public class AList<Item> {
     		resize(items.length / 2);
 		}
     	Item lastItem = getLast();
+    	items[size - 1] = null;     // nulling out the deleted item to save memory and avoid loitering.
     	size -= 1;
     	return lastItem;
     }
