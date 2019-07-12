@@ -1,7 +1,7 @@
 public class SelectionSortTest {
 
     /** Test SelectionSort(). */
-    public static void SelectionSortTest() {
+    public void SelectionSortTest() {
         String[] input = {"i", "have", "an", "egg"};
         String[] expected = {"an", "egg", "have", "i"};
         SelectionSort.sort(input);
@@ -9,7 +9,7 @@ public class SelectionSortTest {
     }
 
     /** Test findSmallest(). */
-    public static void findSmallestTest() {
+    public void findSmallestTest() {
         String[] input = {"i", "have", "an", "egg"};
         int expected = 2;
 
@@ -24,7 +24,7 @@ public class SelectionSortTest {
     }
 
     /** Test swap(). */
-    public static void swapTest() {
+    public void swapTest() {
         String[] input = {"i", "have", "an", "egg"};
         int a = 0;
         int b = 2;
@@ -34,7 +34,7 @@ public class SelectionSortTest {
         org.junit.Assert.assertArrayEquals(expected, input);
     }
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         findSmallestTest();
         swapTest();
         SelectionSortTest();
