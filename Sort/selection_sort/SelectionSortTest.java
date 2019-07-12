@@ -33,10 +33,4 @@ public class SelectionSortTest {
         SelectionSort.swap(input, a, b);
         org.junit.Assert.assertArrayEquals(expected, input);
     }
-
-    public void main(String[] args) {
-        findSmallestTest();
-        swapTest();
-        SelectionSortTest();
-    }
 }
