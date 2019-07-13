@@ -4,15 +4,6 @@ import static org.junit.Assert.*;
 
 public class SelectionSortTest {
 
-    /** Test SelectionSort(). */
-    @Test
-    public void testSelectionSort() {
-        String[] input = {"i", "have", "an", "egg"};
-        String[] expected = {"an", "egg", "have", "i"};
-        SelectionSort.sort(input);
-        assertArrayEquals(input, expected);
-    }
-
     /** Test findSmallest(). */
     @Test
     public void testFindSmallest() {
@@ -39,5 +30,14 @@ public class SelectionSortTest {
 
         SelectionSort.swap(input, a, b);
         assertArrayEquals(expected, input);
+    }
+
+    /** Test SelectionSort(). */
+    @Test
+    public void testSelectionSort() {
+        String[] input = {"i", "have", "an", "egg"};
+        String[] expected = {"an", "egg", "have", "i"};
+        SelectionSort.sort(input);
+        assertArrayEquals(input, expected);
     }
 }
