@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4492353e-3e30-4da0-b6c5-150171f45d01" name="Default Changelist" comment="" />
+    <list default="true" id="4492353e-3e30-4da0-b6c5-150171f45d01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/selection_sort/SelectionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/selection_sort/SelectionSortTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/selection_sort/SelectionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="25">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -26,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/selection_sort/SelectionSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="470">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -102,6 +104,16 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.SelectionSortTest">
+    <configuration name="SelectionSortTest.testFindSmallest" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sort" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SelectionSortTest" />
+      <option name="METHOD_NAME" value="testFindSmallest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -160,6 +172,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SelectionSortTest" />
+        <item itemvalue="Android JUnit.SelectionSortTest.testFindSmallest" />
         <item itemvalue="Application.SelectionSortTest" />
       </list>
     </recent_temporary>
@@ -178,28 +191,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SelectionSortTest - 2019.07.12 at 22h 27m 59s.xml">
-      <configuration name="SelectionSortTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectionSortTest - 2019.07.12 at 22h 28m 45s.xml">
-      <configuration name="SelectionSortTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectionSortTest - 2019.07.12 at 22h 31m 40s.xml">
-      <configuration name="SelectionSortTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectionSortTest - 2019.07.12 at 22h 33m 06s.xml">
-      <configuration name="SelectionSortTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectionSortTest - 2019.07.12 at 22h 33m 18s.xml">
-      <configuration name="SelectionSortTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectionSortTest - 2019.07.13 at 11h 09m 05s.xml">
-      <configuration name="SelectionSortTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SelectionSortTest - 2019.07.13 at 11h 09m 20s.xml">
       <configuration name="SelectionSortTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SelectionSortTest - 2019.07.13 at 11h 13m 16s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest - 2019.07.13 at 19h 36m 50s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest - 2019.07.13 at 21h 20m 42s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest - 2019.07.13 at 21h 20m 53s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest - 2019.07.13 at 21h 22m 42s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest_testFindSmallest - 2019.07.13 at 21h 23m 02s.xml">
+      <configuration name="SelectionSortTest.testFindSmallest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest_testFindSmallest - 2019.07.13 at 21h 23m 07s.xml">
+      <configuration name="SelectionSortTest.testFindSmallest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest - 2019.07.13 at 21h 23m 18s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest - 2019.07.13 at 21h 23m 31s.xml">
       <configuration name="SelectionSortTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -234,7 +253,7 @@
       <window_info anchor="bottom" id="Style Checker" order="8" weight="0.32871014" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32871014" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32771084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -281,15 +300,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/selection_sort/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="25">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/selection_sort/SelectionSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="470">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
         </state>
       </provider>
     </entry>
