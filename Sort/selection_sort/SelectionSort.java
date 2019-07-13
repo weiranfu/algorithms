@@ -7,7 +7,7 @@ public class SelectionSort {
     /** Returns the smallest string in x.
      *  @source Got help with string compares from https://goo.gl/a7yBU5.
      */
-    private static int findSmallest(String[] x, int start) {
+    public static int findSmallest(String[] x, int start) {
         int smallestIndex = start;
         for (int i = start; i < x.length; i += 1) {
             if (x[i].compareTo(x[smallestIndex]) < 0) {
@@ -17,7 +17,7 @@ public class SelectionSort {
         return smallestIndex;
     }
 
-    private static void swap(String[] x, int a, int b) {
+    public static void swap(String[] x, int a, int b) {
         String temp = x[a];
         x[a] = x[b];
         x[b] = temp;
