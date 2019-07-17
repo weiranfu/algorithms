@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4492353e-3e30-4da0-b6c5-150171f45d01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/selection_sort/SelectionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/selection_sort/SelectionSortTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="4492353e-3e30-4da0-b6c5-150171f45d01" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/selection_sort/SelectionSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="480">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -48,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="813" />
@@ -191,12 +189,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SelectionSortTest - 2019.07.13 at 11h 09m 20s.xml">
-      <configuration name="SelectionSortTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectionSortTest - 2019.07.13 at 11h 13m 16s.xml">
-      <configuration name="SelectionSortTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SelectionSortTest - 2019.07.13 at 19h 36m 50s.xml">
       <configuration name="SelectionSortTest" configurationId="JUnit" />
     </history-entry>
@@ -221,6 +213,12 @@
     <history-entry file="SelectionSortTest - 2019.07.13 at 21h 23m 31s.xml">
       <configuration name="SelectionSortTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SelectionSortTest - 2019.07.13 at 21h 27m 07s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectionSortTest - 2019.07.13 at 21h 27m 18s.xml">
+      <configuration name="SelectionSortTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -232,8 +230,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="615" y="0" width="825" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24904214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -244,7 +241,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23855421" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23855421" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.51317614" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -253,7 +250,7 @@
       <window_info anchor="bottom" id="Style Checker" order="8" weight="0.32871014" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32771084" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32771084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -307,8 +304,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/selection_sort/SelectionSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="480">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
