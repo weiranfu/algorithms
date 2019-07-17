@@ -1,7 +1,7 @@
 /** An SLList is an integer list, which hides the terrible truth
   * of the nakeness within.
   */
-public class SLList {
+public class SLList implements List61B<Item> {
 
 	private static class IntNode {
 		public int item;
