@@ -1,5 +1,5 @@
 public class VengefulSLList<Item> extends SLList<Item> {
-	private SLList<Item> deletedItems;
+	private SLList<Item> deletedItems = new SLList<>();
 
 	/** Prints out all the items deleted by removeLast(). */
 	public void printLostItems() {
