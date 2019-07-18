@@ -7,3 +7,6 @@ length = a.length();
 a.compareTo(b) < 0;   // If a < b:
 a.compareTo(b) == 0;  // If a == b:
 a.compareTo(b) > 0;   // if a > b:
+
+// Get the ith character in a string.
+char c = a.charAt(index);
