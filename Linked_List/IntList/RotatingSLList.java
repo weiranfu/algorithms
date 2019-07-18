@@ -8,4 +8,15 @@ public class RotatingSLList<Item> extends SLList<Item> {
 		Item last = removeLast();
 		addFirst(last);
 	}
+
+	public static void main(String[] args) {
+		RotatingSLList<Integer> rsl = new RotatingSLList<>();
+		rsl.addLast(1);
+		rsl.addLast(2);
+		rsl.addLast(3);
+		rsl.addLast(4);
+		rsl.print();
+		rsl.rotateRight();
+		rsl.print();
+	}
 }
