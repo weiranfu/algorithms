@@ -30,6 +30,9 @@ public class SLList<Item> implements List61B<Item> {
 	public void addFirst(Item x) {
 		size += 1;
 		sentinel.next = new IntNode(x, sentinel.next);
+		if (size() == 1) {
+			last = sentinel.next;
+		}
 	}
 
 		/** Adds a new item to the last of this linked list. */
