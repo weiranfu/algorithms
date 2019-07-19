@@ -1,4 +1,10 @@
 // convert String to Int:
-int number = Integer.parseInt(string);
+int n = Integer.parseInt(string);
 
-double num = Double.parseDouble(string);
+double d = Double.parseDouble(string);
+
+// get the ith character in a string.
+char c = string.charAt(i);
+
+// convert character to an integer.
+int n = Character.getNumericValue(c);
