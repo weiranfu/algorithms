@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7cb51d4-c27e-456e-9b81-a99e5349755f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/List61B.java" beforeDir="false" afterPath="$PROJECT_DIR$/List61B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RotatingSLList.java" beforeDir="false" afterPath="$PROJECT_DIR$/RotatingSLList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VengefulSLList.java" beforeDir="false" afterPath="$PROJECT_DIR$/VengefulSLList.java" afterDir="false" />
-    </list>
+    <list default="true" id="a7cb51d4-c27e-456e-9b81-a99e5349755f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +17,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VengefulSLList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
+            <state relative-caret-position="255">
               <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
             </state>
           </provider>
@@ -77,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="615" />
     <option name="width" value="825" />
     <option name="height" value="900" />
@@ -202,8 +197,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="615" y="0" width="825" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.807152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -212,10 +206,10 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32891566" />
       <window_info anchor="bottom" id="Style Checker" order="5" />
       <window_info anchor="bottom" id="Message" order="6" />
@@ -261,7 +255,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VengefulSLList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
+        <state relative-caret-position="255">
           <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
         </state>
       </provider>
