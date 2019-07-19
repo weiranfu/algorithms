@@ -11,6 +11,7 @@ public class RotatingSLList<Item> extends SLList<Item> {
 
 	public static void main(String[] args) {
 		RotatingSLList<Integer> rsl = new RotatingSLList<>();
+        RotatingSLList<Integer> rsl2 = new RotatingSLList<>();
 		rsl.addFirst(1);
 		rsl.addLast(2);
 		rsl.addLast(3);
@@ -18,5 +19,11 @@ public class RotatingSLList<Item> extends SLList<Item> {
 		rsl.print();
 		rsl.rotateRight();
 		rsl.print();
+		rsl2.addFirst(4);
+		rsl2.addLast(1);
+		rsl2.addLast(2);
+		rsl2.addLast(3);
+		rsl2.print();
+        System.out.println(rsl2.equals(rsl));
 	}
 }

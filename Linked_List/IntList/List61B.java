@@ -23,7 +23,7 @@ public interface List61B<Item> {
 	/** Prints out the entire list. */
 	default void print() {
 		for (int i = 0; i < size(); i += 1) {
-			System.out.println(get(i) + " ");
+			System.out.print(get(i) + " ");
 		}
 		System.out.println();
 	}
