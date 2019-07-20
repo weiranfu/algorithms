@@ -3,7 +3,7 @@
  * return the maximum object in the array
  */
 public class Maximizer {
-    public static OurComparable max(OurComparable[] items) {
+    public static Comparable max(Comparable[] items) {
         int maxIndex = 0;
         for (int i = 0; i < items.length; i += 1) {
             if (items[maxIndex].compareTo(items[i]) < 0) {

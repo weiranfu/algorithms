@@ -1,4 +1,4 @@
-public class Dog implements OurComparable<Dog> {
+public class Dog implements Comparable<Dog> {
 	private int size;
 	private String name;
 
