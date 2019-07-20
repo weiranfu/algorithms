@@ -1,15 +1,6 @@
-//import java.util.Comparator;
+import java.util.Comparator;
 
 public class Dog implements Comparable<Dog> {
-	/** A nested class to implement Comparator<Dog>. */
-	// Why a static class? Because we don't need to instantiate a Dog to get a NameComparator.
-	private static class NameComparator implements Comparator<Dog> {
-		@Override
-		public int compare(Dog d1, Dog d2) {
-			return d1.name.compareTo(d2.name);
-		}
-	}
-
 	private int size;
 	private String name;
 
@@ -27,6 +18,15 @@ public class Dog implements Comparable<Dog> {
 	public int compareTo(Dog thatDog) {
 		// casting o so that we can get its size.
 		return size - thatDog.size;
+	}
+
+	/** A nested class to implement Comparator<Dog>. */
+	// Why a static class? Because we don't need to instantiate a Dog to get a NameComparator.
+	private static class NameComparator implements Comparator<Dog> {
+		@Override
+		public int compare(Dog d1, Dog d2) {
+			return d1.name.compareTo(d2.name);
+		}
 	}
 
 	/** Return the instantiated nested class NameComparator. */

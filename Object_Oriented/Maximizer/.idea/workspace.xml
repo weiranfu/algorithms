@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64ea8dfc-62cd-4cf4-ab49-7ee41ca000cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Comparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DogLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/DogLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Maximizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Maximizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maximizer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maximizer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maximizer/Dog$NameComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maximizer/Dog$NameComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maximizer/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maximizer/Dog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maximizer/DogLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maximizer/DogLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maximizer/Maximizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maximizer/Maximizer.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Maximizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            <state relative-caret-position="255">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,26 +40,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            <state relative-caret-position="355">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Comparator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DogLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="240">
+              <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -74,8 +73,8 @@
       <list>
         <option value="$PROJECT_DIR$/Comparator.java" />
         <option value="$PROJECT_DIR$/Dog.java" />
-        <option value="$PROJECT_DIR$/Maximizer.java" />
         <option value="$PROJECT_DIR$/DogLauncher.java" />
+        <option value="$PROJECT_DIR$/Maximizer.java" />
       </list>
     </option>
   </component>
@@ -211,14 +210,14 @@
       <window_info content_ui="combo" id="Project" order="4" weight="0.24834874" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Style Checker" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.28554216" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.28554216" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -255,31 +254,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Maximizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DogLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="240">
+          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Maximizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
