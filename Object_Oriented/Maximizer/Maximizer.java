@@ -12,10 +12,4 @@ public class Maximizer {
         }
         return items[maxIndex];
     }
-
-    public static void main(String[] args) {
-        Dog[] dogs = {new Dog("Elyse", 3), new Dog("Sture", 9), new Dog("Benjamin", 15)};
-        Dog maxDog = (Dog) max(dogs);
-        maxDog.bark();
-    }
 }
