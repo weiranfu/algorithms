@@ -2,7 +2,7 @@
  * A Max function that can take in an array of general data type Objects and
  * return the maximum object in the array
  */
-public class MaxGeneralObject {
+public class Maximizer {
     public static OurComparable max(OurComparable[] items) {
         int maxIndex = 0;
         for (int i = 0; i < items.length; i += 1) {
