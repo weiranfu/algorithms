@@ -12,4 +12,14 @@ public class Maximizer {
         }
         return items[maxIndex];
     }
+
+    public static Comparable maxC(Comparable[] items, Comparator c) {
+        int maxIndex = 0;
+        for (int i = 0; i < items.length; i += 1) {
+            if (c.compare(items[maxIndex], items[i]) < 0) {
+                maxIndex = i;
+            }
+        }
+        return items[maxIndex];
+    }
 }
