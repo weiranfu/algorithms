@@ -29,8 +29,8 @@ public class Dog implements Comparable<Dog> {
 		}
 	}
 
-	/** Return the instantiated nested class NameComparator. */
-	// In this way, we can use method in nested class. */
+	/** Return the instantiated nested class NameComparator.
+	  * In this way, we can use method in nested class. */
 	public static Comparator<Dog> getNameComparator() {
 		return new NameComparator();
 	}
