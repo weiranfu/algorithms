@@ -9,12 +9,12 @@ public class DogLauncher {
         System.out.println(Maximizer.max(dogs));
 
         // Compare dogs in natural order.
-        Dog maxDog = (Dog) Maximizer.max(dogs);   // casting OurComparable to Dog.
+        Dog maxDog = Maximizer.max(dogs);
         maxDog.bark();
 
         // Compare dogs by alphabetical order of their names.
         Comparator<Dog> nc = Dog.getNameComparator();
-        Dog maxNameDog = (Dog) Maximizer.maxC(dogs, nc);
+        Dog maxNameDog = Maximizer.maxC(dogs, nc);
         maxNameDog.bark();
     }
 }

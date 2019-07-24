@@ -5,14 +5,14 @@
 import java.util.Comparator;
 
 public class Maximizer {
-    public static Comparable max(Comparable[] items) {
+    public static <T> T max(Comparable<T>[] items) {
         int maxIndex = 0;
         for (int i = 0; i < items.length; i += 1) {
-            if (items[maxIndex].compareTo(items[i]) < 0) {
+            if (items[maxIndex].compareTo((T) items[i]) < 0) {
                 maxIndex = i;
             }
         }
-        return items[maxIndex];
+        return (T) items[maxIndex];
     }
 
     /**
@@ -20,13 +20,13 @@ public class Maximizer {
      * However, we cannot write maxC(Comparable[] items, Comparator<Comparable> c),
      * because we cannot pass in Comparator<Dog> into Comparator<Comparable>.
      */
-    public static Comparable maxC(Comparable[] items, Comparator c) {
+    public static <T> T maxC(Comparable<T>[] items, Comparator<T> c) {
         int maxIndex = 0;
         for (int i = 0; i < items.length; i += 1) {
-            if (c.compare(items[maxIndex], items[i]) < 0) {
+            if (c.compare((T) items[maxIndex], (T) items[i]) < 0) {
                 maxIndex = i;
             }
         }
-        return items[maxIndex];
+        return (T) items[maxIndex];
     }
 }
