@@ -1,8 +1,10 @@
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class ArrayMap<K, V> implements Map61B<K, V> {
+public class ArrayMap<K, V> implements Map61B<K, V>, Iterable<K> {
     private K[] keys;
     private V[] values;
     private int size;
@@ -49,10 +51,16 @@ public class ArrayMap<K, V> implements Map61B<K, V> {
     @Override
     public V get(K key) {
         int index = keyIndex(key);
+        /*
         if (index == -1) {
-            return null;
-        } else {
+            throw new IllegalArgumentException("The key provided " + key + " was not in ArrayMap.");
+        }
+        */
+        try {
             return values[index];
+        } catch (Exception e) {
+            System.out.println("An exception detected: " + e);
+            return null;
         }
     }
 
@@ -72,6 +80,35 @@ public class ArrayMap<K, V> implements Map61B<K, V> {
         return size;
     }
 
+    @Override
+    public Iterator<K> iterator() {
+        /* A much easier way is to use the iterator of keyList.
+        List<K> keyList = keys();
+        return keyList.iterator();
+         */
+        return new KeyIterator();
+    }
+
+    private class KeyIterator implements Iterator<K> {
+        private int p;
+
+        public KeyIterator() {
+            p = 0;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return p < size;
+        }
+
+        @Override
+        public K next() {
+            K returnItem = keys[p];
+            p += 1;
+            return returnItem;
+        }
+    }
+
     @Test
     public void test() {
         ArrayMap<Integer, Integer> am = new ArrayMap<>();
@@ -82,6 +119,7 @@ public class ArrayMap<K, V> implements Map61B<K, V> {
 
     public static void main(String[] args) {
         ArrayMap<String, Integer> m = new ArrayMap<>();
+        m.get("monkey");
         m.put("monkey", 10);
         m.put("tiger", 3);
         m.put("horse", 5);
@@ -89,5 +127,9 @@ public class ArrayMap<K, V> implements Map61B<K, V> {
         System.out.println(m.containsKey("fish"));
         System.out.println(m.get("monkey"));
         System.out.println(m.keys());
+        // Test iterator.
+        for (String s: m) {
+            System.out.println(s);
+        }
     }
 }

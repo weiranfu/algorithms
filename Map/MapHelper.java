@@ -8,7 +8,10 @@ public class MapHelper {
         return map.get(key);
     }
 
-    /** Returns the maximum of all keys. Works only if keys are comparable. */
+    /** Returns the maximum of all keys. Works only if keys are comparable.
+     * extends keyword is a type upper bound here.
+     * Meaning every ArrayMap you give me must have a actual parameter type that is a subtype of Comparable<T>.
+     */
     public static <K extends Comparable<K>, V> K maxKey(Map61B<K, V> map) {
         if (map.size() == 0) {
             return null;
@@ -16,7 +19,7 @@ public class MapHelper {
         List<K> keys = map.keys();
         K maxKey = keys.get(0);
         for (int i = 0; i < keys.size(); i += 1) {
-            if ((maxKey).compareTo(keys.get(i)) < 0) {
+            if (maxKey.compareTo(keys.get(i)) < 0) {
                 maxKey = keys.get(i);
             }
         }
