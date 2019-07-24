@@ -17,5 +17,6 @@ public class MapHelper {
         int expected = 1;
         int actual = MapHelper.get(am, "tiger");
         assertEquals(expected, actual);
+        assertNull(MapHelper.get(am, "dafjdfanfg"));
     }
 }
