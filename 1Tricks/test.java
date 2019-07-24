@@ -9,6 +9,7 @@ assertArrayEquals(array1, array2);
 assertTrue(boolean);
 assertFalse(boolean);
 
+assertNull(a);
 assertNotNull(a);
 
 fail();
