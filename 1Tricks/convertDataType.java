@@ -9,3 +9,7 @@ char c = string.charAt(i);
 // convert character to an integer.
 int n = Character.getNumericValue(c);
 int n = c - '0';  // This is much simpler.
+
+
+// convert array to string.
+String s = Arrays.toString(str);

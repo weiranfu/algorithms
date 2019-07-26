@@ -17,6 +17,20 @@ s = s.concat(str).concat("good");
 // now s is "bookisgood".
 
 
+// Returns the index within this string of the first occurrence of the specified substring.
+s.indexOf(char c);
+
+
+// Returns true if string contains another string.
+s.contains(String s);
+
+// Converts this string to a new character array.
+char[] a = s.toCharArray();
+
+// Returns a string that is a substring of this string.
+String ss = s.substring(int beginIndex, int endIndex);
+the substring is [begin, end), length = end - begin
+
 Public String [ ] split ( String regex, int limit )
 /**
 arameters:
