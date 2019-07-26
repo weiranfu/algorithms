@@ -21,6 +21,7 @@ s = s.concat(str).concat("good");
 s.indexOf(String substr);
 if substr does not exist in s, return -1;
 if substr.length() > s.length(), return -1.
+if substr = "", returns 0.
 
 
 // Returns true if string contains another string.
