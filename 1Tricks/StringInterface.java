@@ -18,7 +18,9 @@ s = s.concat(str).concat("good");
 
 
 // Returns the index within this string of the first occurrence of the specified substring.
-s.indexOf(char c);
+s.indexOf(String substr);
+if substr does not exist in s, return -1;
+if substr.length() > s.length(), return -1.
 
 
 // Returns true if string contains another string.
