@@ -1,5 +1,5 @@
 package DisjointSets;
-/** connect() is O(n), isConnected() is O(1). */
+/** connect() is O(n), isConnected() is O(1), so it's Quick Find */
 public class QuickFindDS implements DisjointSet {
     private int[] id;
 
@@ -11,6 +11,7 @@ public class QuickFindDS implements DisjointSet {
     }
 
     /** Connect two disjoint sets together. */
+    @Override
     public void connect(int x, int y) {
         int xid = id[x];
         int yid = id[y];
@@ -24,6 +25,7 @@ public class QuickFindDS implements DisjointSet {
     }
 
     /** Returns true if two items are connected. */
+    @Override
     public boolean isConnected(int x, int y) {
         return id[x] == id[y];
     }
