@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bf30514-c979-40fd-8257-c0228b8ea370" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DisjointSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Set/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Set/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Set/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Set/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Set/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Set/ArraySet$ArraySetIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Set/ArraySet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Set/Set.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DisjointSet.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,10 +18,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DisjointSet.java">
+        <entry file="file://$PROJECT_DIR$/DisjointSets/DisjointSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -52,6 +42,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/DisjointSet.java" />
+        <option value="$PROJECT_DIR$/DisjointSets/DisjointSet.java" />
       </list>
     </option>
   </component>
@@ -75,6 +66,11 @@
             <path>
               <item name="Set" type="b2602c69:ProjectViewProjectNode" />
               <item name="Set" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Set" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Set" type="462c0819:PsiDirectoryNode" />
+              <item name="DisjointSets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,7 +155,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24904214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -185,8 +181,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DisjointSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state relative-caret-position="150">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DisjointSets/DisjointSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
