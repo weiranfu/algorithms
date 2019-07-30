@@ -1,12 +1,12 @@
 # Selection Sort
 
-####Algorithm
+#### Algorithm
 
 * Find the smallest item
 * Move it to the front
 * Selection sort the remaining N-1 items (without touching the front item)
 
-
+Time complexity: O(n^2)
 
 #### Implementation
 
