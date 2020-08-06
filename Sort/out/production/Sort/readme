@@ -1,9 +1,0 @@
-# Merge Sort
-
-#### Algorithm
-1. If the list is size 1, return. Otherwise:
-2. Mergesort the left half
-3. Mergesort the right half
-4. Merge the results
-
-Time complexity: O(n*lgn)
