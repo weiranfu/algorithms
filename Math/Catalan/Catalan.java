@@ -39,7 +39,7 @@ public class Catalan {
      *
      *      n对括号有多少种正确配对的可能
      */
-    public int catalen(int n) {
+    public long catalen(int n) {
         CombinationNumber cn = new CombinationNumber();
         return cn.combination(2 * n, n) - cn.combination(2 * n, n - 1);
     }

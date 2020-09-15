@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.ArrayList;
 
-/** Get the Minimum Spanning Tree(MST) using Prime's algorithm
+/** Get the Minimum Spanning Tree(MST) using Prim's algorithm
  * in an edge-weighted graph. The edge weights can be positive,
  * zero, or negative and need not be distinct.
- * Prime's algorithm: Every time we add a new vertex to MST, we consider
+ * Prim's algorithm: Every time we add a new vertex to MST, we consider
  * the lightest cutting edge which connects to a vertex in MST.
  * If a vertex not in MST has multiple edges connecting to MST, then
  * we only consider the lightest cutting edge it has, which means a vertex
@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * O(ElogE + E)   (when graph is sparse, E = V)
  * 稀疏图用Kruskal算法，稠密图用朴素版Prim算法，堆优化版Prim算法一般不会用
   */
-public class PrimeMST_Sparse {
+public class PrimMST_Sparse {
     int n;
     int[][] edgeTo;             // the shortest edge to a vertex.
     int[] dist;               // the distance from MST to a vertex.
@@ -26,7 +26,7 @@ public class PrimeMST_Sparse {
     int weight;               // total weight of MST
     int INF = 0x3f3f3f3f;
 
-    public PrimeMST_Sparse(List<int[]>[] g) {
+    public PrimMST_Sparse(List<int[]>[] g) {
         n = g.length;
         edgeTo = new int[n][2];
         dist = new int[n];

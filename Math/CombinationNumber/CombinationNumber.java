@@ -5,14 +5,15 @@ package Math.CombinationNumber;
  */
 public class CombinationNumber {
     int N = 1000;
-    int[][] c = new int[N][N];
+    long[][] c = new long[N][N];
     int mod = (int)1e9 + 7;
 
     /** O(n^2)
-     * 递推：C(a,b) = C(a-1,b-1) + C(a-1,b)      (包含一个特殊元素 + 不包含)
+     * 递推：杨辉三角
+     * C(a,b) = C(a-1,b-1) + C(a-1,b)      (包含一个特殊元素 + 不包含)
      * 预处理  C(a,b)
      */
-    public int combination(int a, int b) {
+    public long combination(int a, int b) {
         for (int i = 0; i < N; i++) {
             for (int j = 0; j <= i; j++) {
                 if (j == 0) c[i][j] = 1;               // 初始化

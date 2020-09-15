@@ -14,7 +14,7 @@ import java.util.List;
  * O(V^2 + E)    (when graph is dense, V^2 = E, O(E))
  * 稀疏图用Kruskal算法，稠密图用朴素版Prim算法，堆优化版Prim算法一般不会用
  */
-public class PrimeMST_Dense {
+public class PrimMST_Dense {
 
     int n;
     int[][] g;               // Dense graph using Adjacency Matrix
@@ -24,7 +24,7 @@ public class PrimeMST_Dense {
     int weight;
     int INF = 0x3f3f3f3f;
 
-    public PrimeMST_Dense(int n, int[][] edges) {
+    public PrimMST_Dense(int n, int[][] edges) {
         this.n = n;
         dist = new int[n];
         g = new int[n][n];
