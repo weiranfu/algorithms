@@ -1,6 +1,5 @@
 package Graph.SCC;
 
-import Graph.Edge;
 import Graph.Graph;
 
 /**
