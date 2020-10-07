@@ -45,6 +45,7 @@ public class Hungarian {
         return cnt;
     }
 
+    // 递归寻找增广路
     private boolean find(int u) {           // find matching node in n2
         for (int v : g[u]) {
             if (!visited[v]) {              // only try not considered node.
