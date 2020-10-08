@@ -31,7 +31,7 @@ public class Interval_Grouping {
 
         PriorityQueue<Integer> pq = new PriorityQueue<>();  // maintain max_r
         for (int i = 0; i < n; i++) {
-            if (pq.isEmpty() || pq.peek() >= ranges[i][0]) { // 如果 pq 里面最小的 max_r 都大与当前区间的左端点
+            if (pq.isEmpty() || pq.peek() > ranges[i][0]) { // 如果 pq 里面最小的 max_r 都大与当前区间的左端点
                 pq.add(ranges[i][1]);                        // 则新开一个组
             } else {
                 pq.poll();
@@ -40,5 +40,32 @@ public class Interval_Grouping {
         }
 
         return pq.size();
+    }
+
+
+    /**
+     * 方法2： 看成差分数组
+     * [a, b] meeting 可以看成区间 [a, b] 都加 1
+     * 所有meeting都加了后，从前往后扫，记录最大的值
+     * 将一个meeting 看成两个事件：entering event and leaving event. 如果碰到entering event，则加 1，反之减 1。
+     */
+    public int minGroup2(int[][] ranges) {
+        int n = ranges.length;
+        int[][] events = new int[2 * n][2];
+        for (int i = 0; i < n; i++) {
+            events[2 * i] = new int[]{ranges[i][0], 1};         // entering event
+            events[2 * i + 1] = new int[]{ranges[i][1], -1};    // leaving event
+        }
+        // if time is same, process leaving event before entering event.
+        Arrays.sort(events, (a, b) -> {
+            if (a[0] != b[0]) return a[0] - b[0];
+            else return a[1] - b[1];
+        });
+        int res = 0, cnt = 0;
+        for (int[] event : events) {
+            cnt += event[1];
+            res = Math.max(res, cnt);
+        }
+        return res;
     }
 }
