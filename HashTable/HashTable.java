@@ -1,6 +1,7 @@
 package HashTable;
 
-import edu.princeton.cs.algs4.*;
+import edu.princeton.cs.algorithms.*;
+import edu.princeton.cs.introcs.*;
 
 /**
  *  Compilation:  javac SeparateChainingHashST.java
@@ -202,7 +203,7 @@ class HashTable<Key, Value> {
 
         // print keys
         for (String s : st.keys()) 
-            StdOut.println(s + " " + st.get(s)); 
+            StdOut.println(s + " " + st.get(s));
 
     }
 
