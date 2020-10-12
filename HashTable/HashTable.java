@@ -203,7 +203,7 @@ class HashTable<Key, Value> {
 
         // print keys
         for (String s : st.keys()) 
-            StdOut.println(s + " " + st.get(s));
+            StdOut.println(s + " " + st.get(s)); 
 
     }
 

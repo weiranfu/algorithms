@@ -1,4 +1,4 @@
-package Double_Ended_Queue;
+package Deque;
 
 /**
  * Deque means doubled-ended queue, which is a sequence containers with
