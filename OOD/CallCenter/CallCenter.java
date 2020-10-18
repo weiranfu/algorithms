@@ -44,8 +44,14 @@ public class CallCenter {
         dispatchCall(call);
     }
 
+    public void finishCall(Caller caller) {
+        Call call = callerCallMap.get(caller);
+        call.disconnect();
+        callerCallMap.remove(caller);
+    }
+
     /* Routes the call to an available employee, or saves in a queue if no employee available. */
-    public void dispatchCall(Call call) {
+    void dispatchCall(Call call) {
         Employee emp = findHandler(call);
         if (emp != null) {
             call.connect(emp);
@@ -67,7 +73,7 @@ public class CallCenter {
 
     /* An employee got free. Look for a waiting call that he/she can serve. Return true
      * if we were able to assign a call, false otherwise. */
-    public boolean assignCall(Employee emp) {
+    boolean assignCall(Employee emp) {
         /* Check the queues, starting from the highest rank this employee can serve. */
         for (int i = emp.getRank().value(); i >= 0; i--) {
             Deque<Call> q = callQueues[i];
@@ -80,11 +86,5 @@ public class CallCenter {
             }
         }
         return false;
-    }
-
-    public void finishCall(Caller caller) {
-        Call call = callerCallMap.get(caller);
-        call.disconnect();
-        callerCallMap.remove(caller);
     }
 }
