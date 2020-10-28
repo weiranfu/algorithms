@@ -66,7 +66,7 @@ class ExecutionGenerator {
                 case PREDICATE: predicates.add((Predicate)node); break;
                 case ACTION: actions.add((Action)node); break;
                 default:
-                    throw new RuntimeException("Unsupport enum value " + node.getKind().name());
+                    throw new RuntimeException("Unsupported enum value " + node.getKind().name());
             }
         }
 

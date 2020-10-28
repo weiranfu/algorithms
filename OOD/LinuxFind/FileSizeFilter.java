@@ -6,7 +6,9 @@ package OOD.LinuxFind;
 // -size -1GB
 class FileSizeFilter extends Filter {
     public enum OpType {
-        EQUAL, GREATER_EQUAL, LESS_EQUAL
+        EQUAL,
+        GREATER_EQUAL,
+        LESS_EQUAL
     }
 
     private long targetFileSize;
