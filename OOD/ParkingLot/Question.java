@@ -37,21 +37,21 @@ public class Question {
         TariffCalculator tariffCalculator = new BasicTariffCalculator();
 
         Configuration configuration = Configuration.getConfiguration();
-        configuration.setSpot(1, 1, Type.Motorcycle)
+        configuration.setSpot(1, 1, Type.MOTORCYCLE)
                 .setTerminal(1, 2, "Entrance")
                 .setTerminal(1, 2, "Exit")
-                .setSpot(1, 3, Type.Compact)
-                .setSpot(2, 1, Type.Handicapped)
-                .setSpot(2, 2, Type.Compact)
-                .setSpot(2, 3, Type.Large)
+                .setSpot(1, 3, Type.COMPACT)
+                .setSpot(2, 1, Type.HANDICAPPED)
+                .setSpot(2, 2, Type.COMPACT)
+                .setSpot(2, 3, Type.LARGE)
                 .setTerminal(3, 1, "Entrance")
                 .setTerminal(3, 1, "Exit")
-                .setSpot(3, 2, Type.Motorcycle)
+                .setSpot(3, 2, Type.MOTORCYCLE)
                 .setTerminal(3, 3, "Entrance")
                 .setTerminal(3, 3, "Exit")
-                .setSpot(4, 1, Type.Large)
-                .setSpot(4, 2, Type.Compact)
-                .setSpot(4, 3, Type.Handicapped)
+                .setSpot(4, 1, Type.LARGE)
+                .setSpot(4, 2, Type.COMPACT)
+                .setSpot(4, 3, Type.HANDICAPPED)
                 .setPaymentMethods(PaymentMethod.CreditCard)
                 .setPaymentMethods(PaymentMethod.Cash)
                 .setStrategy(strategy)
@@ -64,7 +64,7 @@ public class Question {
         List<Terminal> terminals = parkingLot.getTerminals();
         for (Terminal terminal : terminals) {
             if (terminal instanceof EntranceTerminal) {
-                Ticket ticket = ((EntranceTerminal) terminal).getTicket(Type.Compact);
+                Ticket ticket = ((EntranceTerminal) terminal).getTicket(Type.COMPACT);
                 ticket.print();
                 tickets.add(ticket);
             }

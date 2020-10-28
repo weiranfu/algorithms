@@ -8,12 +8,12 @@ public class BasicTariffCalculator implements TariffCalculator{
     public int calculateCost(Duration duration, Type type) {
         int hours = (int)duration.toHours();
         switch (type) {
-            case Handicapped:
-            case Motorcycle:
+            case HANDICAPPED:
+            case MOTORCYCLE:
                 return hours;
-            case Compact:
+            case COMPACT:
                 return 2 * hours;
-            case Large:
+            case LARGE:
                 return 3 * hours;
             default:
                 return -1;

@@ -28,17 +28,17 @@ public class Configuration {
 
     public Configuration setSpot(int row, int column, Type type) {
         switch (type) {
-            case Handicapped:
-                spots.get(Type.Handicapped).add(new int[]{spotId++, row, column});
+            case HANDICAPPED:
+                spots.get(Type.HANDICAPPED).add(new int[]{spotId++, row, column});
                 break;
-            case Compact:
-                spots.get(Type.Compact).add(new int[]{spotId++, row, column});
+            case COMPACT:
+                spots.get(Type.COMPACT).add(new int[]{spotId++, row, column});
                 break;
-            case Large:
-                spots.get(Type.Large).add(new int[]{spotId++, row, column});
+            case LARGE:
+                spots.get(Type.LARGE).add(new int[]{spotId++, row, column});
                 break;
-            case Motorcycle:
-                spots.get(Type.Motorcycle).add(new int[]{spotId++, row, column});
+            case MOTORCYCLE:
+                spots.get(Type.MOTORCYCLE).add(new int[]{spotId++, row, column});
                 break;
         }
         return this;

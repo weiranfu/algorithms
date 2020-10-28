@@ -24,16 +24,16 @@ public class ParkingLot {
         for (Type type : spotsMap.keySet()) {
             for (int[] pos : spotsMap.get(type)) {
                 switch (type) {
-                    case Handicapped:
+                    case HANDICAPPED:
                         spots.add(new HandicappedParkingSpot(pos[0], pos[1], pos[2]));
                         break;
-                    case Compact:
+                    case COMPACT:
                         spots.add(new CompactParkingSpot(pos[0], pos[1], pos[2]));
                         break;
-                    case Large:
+                    case LARGE:
                         spots.add(new LargeParkingSpot(pos[0], pos[1], pos[2]));
                         break;
-                    case Motorcycle:
+                    case MOTORCYCLE:
                         spots.add(new MotorcycleParkingSpot(pos[0], pos[1], pos[2]));
                         break;
                 }
