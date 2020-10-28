@@ -27,7 +27,7 @@ public class N_aryLevelOrderTraversal {
     private void dfs(int depth, Node n, List<List<Integer>> res) {
         if (n == null) return;
         if (depth == res.size()) {
-            res.add(new ArrayList<Integer>());
+            res.add(new ArrayList<>());
         }
         res.get(depth).add(n.val);
         for (Node next : n.children) {

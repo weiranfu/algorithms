@@ -14,6 +14,8 @@ import java.util.*;
  * 3. Add v to our topological sort list. Remove the vertex v and all edges coming out of it.
  *    Decrement in-degrees of all neighbors of vertex v by 1.
  * 4. Repeat steps 2 and 3 until all vertices are removed.
+ *
+ * O(V + E)
  */
 public class TopologicalSortBFS {
     List<Integer> res;

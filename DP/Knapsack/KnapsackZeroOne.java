@@ -18,7 +18,7 @@ public class KnapsackZeroOne {
 
         for (int i = 0; i < N; i++) {
             for (int j = V; j >= v[i]; j--) {
-                dp[i] = Math.max(dp[i], dp[i - v[i]] + w[i]);
+                dp[j] = Math.max(dp[j], dp[j - v[i]] + w[i]);
             }
         }
         return dp[V];
@@ -34,7 +34,7 @@ public class KnapsackZeroOne {
 
         for (int i = 0; i < N; i++) {
             for (int j = V; j >= v[i]; j--) {
-                dp[i] = Math.max(dp[i], dp[i - v[i]] + w[i]);
+                dp[j] = Math.max(dp[j], dp[j - v[i]] + w[i]);
             }
         }
         int res = 0;
@@ -54,7 +54,7 @@ public class KnapsackZeroOne {
 
         for (int i = 1; i <= N; i++) {
             for (int j = 0; j <= V; j++) {
-                if (j >= i) f[i][j] = Math.max(f[i - 1][j], f[i - 1][j - v[i]] + w[i]);
+                if (j >= v[i]) f[i][j] = Math.max(f[i - 1][j], f[i - 1][j - v[i]] + w[i]);
                 else f[i][j] = f[i - 1][j];
             }
         }

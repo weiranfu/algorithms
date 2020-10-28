@@ -11,7 +11,7 @@ public class MergeSort {
 
     int[] tmp;
 
-    // Sort strings destructively.
+    // Sort array destructively.
     public MergeSort(int[] x) {
         int n = x.length;
         tmp = new int[n];

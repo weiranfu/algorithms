@@ -5,7 +5,7 @@ package DP.K_SubSet_DP;
  *
  * dp[k][i] means we divide a[:i] into k parts
  *
- * dp[k][i] = min{ max{ dp[k-1][j] + sum(j+1,i) for j in [1, i-1] } }
+ * dp[k][i] = min{ max{ dp[k-1][j], sum(j+1,i) for j in [1, i-1] } }
  *
  * Initialize:
  *      if k == 1: dp[1][i] = a[i]
@@ -41,41 +41,39 @@ public class MinSubarraySum {
     }
 
 
-    class Solution {
-        public int splitArray(int[] nums, int m) {
-            int n = nums.length;
-            long left = 0, right = 0;
-            for (int i : nums) {
-                left = Math.max(left, i);// left bound is max of array
-                right += i;              // right bound is sum of array
-            }
-            while (left < right) {
-                long mid = left + (right - left) / 2;
-                if (check(nums, m, mid)) {   // find smaller sum value
-                    right = mid;
-                } else {
-                    left = mid + 1;
-                }
-            }
-            return (int)left;
+    public int splitArray2(int[] nums, int m) {
+        int n = nums.length;
+        long left = 0, right = 0;
+        for (int i : nums) {
+            left = Math.max(left, i);// left bound is max of array
+            right += i;              // right bound is sum of array
         }
+        while (left < right) {
+            long mid = left + (right - left) / 2;
+            if (check(nums, m, mid)) {   // find smaller sum value
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return (int)left;
+    }
 
-        // small --- large
-        // n          1
-        // if (check) we will search for smaller max
-        private boolean check(int[] nums, int m, long max) {
-            int n = nums.length;
-            int count = 0;
-            long sum = 0;
-            for (int i = 0; i < n; i++) {
-                if (sum + nums[i] > max) { // greedy
-                    count++;
-                    sum = 0;
-                }
-                sum += nums[i];
+    // small --- large
+    // n          1
+    // if (check) we will search for smaller max
+    private boolean check(int[] nums, int m, long max) {
+        int n = nums.length;
+        int count = 0;
+        long sum = 0;
+        for (int i = 0; i < n; i++) {
+            if (sum + nums[i] > max) { // greedy
+                count++;
+                sum = 0;
             }
-            count++;                  // last subarray
-            return count <= m;
+            sum += nums[i];
         }
+        count++;                  // last subarray
+        return count <= m;
     }
 }

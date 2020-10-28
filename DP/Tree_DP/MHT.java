@@ -82,7 +82,7 @@ public class MHT {
         int max = Math.max(dpdown[v][0], dpup[v]); // 最长链
         if (min > max) {
             min = max;
-            res = new ArrayList<>();
+            res.clear();
             res.add(v);
         } else if (min == max) {
             res.add(v);

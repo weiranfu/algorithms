@@ -18,11 +18,11 @@ public class HeapSort {
     public int[] sortArray(int[] nums) {
         h = nums;
         n = nums.length;
-        for (int i = n / 2; i >= 0; i--) {          // 0 based heap
+        for (int i = n / 2; i > 0; i--) {          // 1 based heap
             down(i, n);
         }
 
-        for (int i = n - 1; i >= 0; i--) {
+        for (int i = n; i >= 1; i--) {
             swap(0, i);
             down(0, i);                          // upper bound is i
         }
@@ -31,8 +31,8 @@ public class HeapSort {
 
     private void down(int x, int len) {             // mind the upper bound len
         int t = x;
-        if (x * 2 + 1 < len && h[x * 2 + 1] > h[t]) t = x * 2 + 1;
-        if (x * 2 + 2 < len && h[x * 2 + 2] > h[t]) t = x * 2 + 2;
+        if (x * 2 <= len && h[x * 2] > h[t]) t = x * 2;
+        if (x * 2 + 1 <= len && h[x * 2 + 1] > h[t]) t = x * 2 + 1;
         if (t != x) {
             swap(t, x);
             down(t, len);

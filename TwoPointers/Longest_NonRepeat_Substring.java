@@ -25,9 +25,9 @@ public class Longest_NonRepeat_Substring {
 
         int res = 0;
         for (int i = 0, j = 0; i < n; i++) {
-            cnt[chars[i]]++;            // cnt + 1
-            while (j <= i && cnt[chars[i]] > 1) {
-                cnt[chars[j]]--;
+            cnt[chars[i] - 'a']++;            // cnt + 1
+            while (j <= i && cnt[chars[i] - 'a'] > 1) {
+                cnt[chars[j] - 'a']--;
                 j++;
             }
             res = Math.max(res, i - j + 1);

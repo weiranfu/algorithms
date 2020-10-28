@@ -1,8 +1,10 @@
 package DP.Interval_DP;
 
+import java.util.Arrays;
+
 /**
- * Count the number of longest palindrome subsequences
- * dp[l][r] 表示区间 [l, r] 中的 最长回文子序列的个数
+ * Count the number of palindrome subsequences
+ * dp[l][r] 表示区间 [l, r] 中的 回文子序列的个数
  *
  * 根据容斥原理：
  * dp[l][r] = dp[l+1][r] + dp[l][r-1] - dp[l+1][r-1]  两头回文串只考虑其中一个

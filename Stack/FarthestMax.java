@@ -39,7 +39,7 @@ public class FarthestMax {
 
     /**
      * Two Pointers
-     * We keep to pointers j, i (j <= i), if we find A[j] > max(A[i], A[i+1], ..., A[n])
+     * We keep two pointers j, i (j <= i), if we find A[j] > max(A[i], A[i+1], ..., A[n])
      * A[j] will be useless, cause every A[i] and its right items will be smaller than A[j], j++
      */
     public int maxLengthTuple(int[] A) {

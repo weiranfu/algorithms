@@ -2,15 +2,15 @@ package Sort.InsertionSort;
 
 public class InPlaceInsertionSort {
 
-    public static void sort(String[] x) {
+    public static void sort(int[] x) {
         insertionSort(x);
     }
 
-    public static void insertionSort(String[] x) {
+    public static void insertionSort(int[] x) {
         for (int i = 0; i < x.length; ++i) {
-            String insertValue = x[i];
+            int insertValue = x[i];
             int j = i - 1;
-            while (j >= 0 && x[j].compareTo(insertValue) > 0) {
+            while (j >= 0 && x[j] > insertValue) {
                 x[j + 1] = x[j];
                 j--;
             }

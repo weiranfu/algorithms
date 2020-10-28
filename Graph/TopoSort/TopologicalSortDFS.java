@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 /** 若一个由图中所有点构成的序列A满足：对于图中的每条边(x, y)，x在A中都出现在y之前，则称A是该图的一个拓扑序列。
  * Using DFS for all vertices to get the topological sort of Directed Acyclic Graph.
+ *
+ * O(V + E)
  */
 public class TopologicalSortDFS {
     /*
